@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#luyou1">路由1</a></li>
+			<li><a href="#luyou2">路由2</a></li>
+			<li><a href="#luyou3">路由3</a></li>
+		</ul>
+		<div id="luyouid"></div>
+		<script>
+			class HashRouter {
+				constructor() {
+					window.addEventListener("hashChange", this.watch.bind(this));
+				}
+				watch() {
+					const hash = location.hash.slice(1);
+					/**
+					 * 业务逻辑操作
+					 *
+					 */
+				}
+			}
+		</script>
+	</body>
+</html>
